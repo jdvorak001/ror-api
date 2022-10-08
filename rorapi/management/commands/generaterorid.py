@@ -29,6 +29,6 @@ def check_ror_id():
                             '_id': ror_id
                             }}})
     if s['hits']['total'] == 1 or s in GRID_REMOVED_IDS:
-        check_ror_id()
+        return check_ror_id()
     return ror_id
 
